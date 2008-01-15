@@ -1,0 +1,10 @@
+category: Devel KDE R
+requires: cygwin kdelibs4 libX11_6 php R qt3
+sdesc: "KDE R frontend"
+ldesc: "RKWard is meant to become an easy to use, transparent frontend 
+to the R-language, a very powerful, yet hard-to-get-into 
+scripting-language with a strong focus on statistic functions. It will 
+not only provide a convenient user-interface, however, but also take 
+care of seamless integration with an office-suite. Practical statistics 
+is not just about calculating, after all, but also about documenting and 
+ultimately publishing the results."
