@@ -1,0 +1,18 @@
+inherit R kde3
+
+DESCRIPTION="KDE R GUI"
+HOMEPAGE="http://rkward.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+# R.css provided by R
+# r.xml provided by kdelibs (libkate)
+PKG_CONTENTS[0]="--exclude=R.css --exclude=r.xml etc/ usr/"
+
+# "rinterface.h" vs. <Rinterface.h>
+USE_MANAGED_MOUNT=1
+
+CYGCONF_ARGS="
+	--with-r-home=${R_HOME}
+	--with-r-includes=${R_INCLUDEDIR}
+	--with-r-libdir=${R_SITELIB}
+"

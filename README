@@ -9,26 +9,25 @@ calculating, after all, but also about documenting and ultimately
 publishing the results.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  kdelibs4-3.5.8-2
+  cygwin-1.5.25-11
+  kdelibs4-3.5.9-1
   libX11_6-1.1.3-1
   php-5.2.5-1
-  R-2.6.1-1
+  R-2.6.2-1
   qt3-3.3.8-4
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  cygport-0.3.9-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
-  perl-5.8.7-5
+  perl-5.10.0-3
   pkg-config-0.21-1
   sed-4.1.5-2
 
@@ -41,15 +40,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack rkward-0.4.9-X-src.tar.bz2
+  unpack rkward-0.4.9a-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./rkward-0.4.9-X.cygport all
+  cygport ./rkward-0.4.9a-X.cygport all
 
 This will create:
-  /usr/src/rkward-0.4.9-X-src.tar.bz2
-  /usr/src/rkward-0.4.9-X.tar.bz2
+  /usr/src/rkward-0.4.9a-X-src.tar.bz2
+  /usr/src/rkward-0.4.9a-X.tar.bz2
 
 -------------------------------------------
 
@@ -157,6 +156,9 @@ Files included in the binary package:
   /usr/share/apps/rkward/analysis/time_series/Box_test.php
   /usr/share/apps/rkward/analysis/time_series/Box_test.rkh
   /usr/share/apps/rkward/analysis/time_series/Box_test.xml
+  /usr/share/apps/rkward/analysis/time_series/hp_filter.php
+  /usr/share/apps/rkward/analysis/time_series/hp_filter.rkh
+  /usr/share/apps/rkward/analysis/time_series/hp_filter.xml
   /usr/share/apps/rkward/analysis/time_series/kpss_test.php
   /usr/share/apps/rkward/analysis/time_series/kpss_test.rkh
   /usr/share/apps/rkward/analysis/time_series/kpss_test.xml
@@ -494,12 +496,12 @@ Files included in the binary package:
   /usr/share/doc/HTML/en/rkward/menu_hierarchy_example.png
   /usr/share/doc/HTML/en/rkward/t_test_plugin_example.png
   /usr/share/doc/HTML/en/rkward/writing_plugins_introduction.docbook
-  /usr/share/doc/rkward-0.4.9/AUTHORS
-  /usr/share/doc/rkward-0.4.9/COPYING
-  /usr/share/doc/rkward-0.4.9/ChangeLog
-  /usr/share/doc/rkward-0.4.9/INSTALL
-  /usr/share/doc/rkward-0.4.9/README
-  /usr/share/doc/rkward-0.4.9/TODO
+  /usr/share/doc/rkward-0.4.9a/AUTHORS
+  /usr/share/doc/rkward-0.4.9a/COPYING
+  /usr/share/doc/rkward-0.4.9a/ChangeLog
+  /usr/share/doc/rkward-0.4.9a/INSTALL
+  /usr/share/doc/rkward-0.4.9a/README
+  /usr/share/doc/rkward-0.4.9a/TODO
   /usr/share/icons/crystalsvg/128x128/apps/rkward.png
   /usr/share/icons/crystalsvg/16x16/apps/rkward.png
   /usr/share/icons/crystalsvg/22x22/apps/rkward.png
@@ -521,6 +523,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.4.9a-1 -----
+Version bump.
 
 ----- version 0.4.9-1 -----
 Initial release for Cygwin.
