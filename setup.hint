@@ -1,5 +1,5 @@
 category: Devel KDE R
-requires: cygwin kdelibs4 libX11_6 php R qt3
+requires: kdelibs4 libX11_6 php R qt3
 sdesc: "KDE R frontend"
 ldesc: "RKWard is meant to become an easy to use, transparent frontend 
 to the R-language, a very powerful, yet hard-to-get-into 
