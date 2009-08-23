@@ -1,0 +1,11 @@
+--- origsrc/rkward-0.5.1/rkward/CMakeLists.txt	2009-07-31 09:43:07.000000000 -0500
++++ src/rkward-0.5.1/rkward/CMakeLists.txt	2009-08-23 17:17:57.498385400 -0500
+@@ -51,7 +51,7 @@ CONFIGURE_FILE(
+ 	@ONLY)
+ ADD_DEPENDENCIES(rkward.bin ${RKWARD_WRAPPER_SCRIPT})
+ 
+-TARGET_LINK_LIBRARIES(rkward.bin ${KDE4_KDECORE_LIBS} windows ${RKWARD_ADDLIBS} agents dialogs plugin settings dataeditor core scriptbackends rbackend misc ktexteditor ${KDE4_KHTML_LIBS} ${KDE4_KFILE_LIBS} ${KDE4_KDEUI_LIBS})
++TARGET_LINK_LIBRARIES(rkward.bin ${KDE4_KDECORE_LIBS} windows ${RKWARD_ADDLIBS} agents dialogs plugin settings dataeditor core scriptbackends rbackend misc ktexteditor ${KDE4_KHTML_LIBS} ${KDE4_KFILE_LIBS} ${KDE4_KDEUI_LIBS} ${X11_X11_LIB})
+ 
+ ########### install files ###############
+ 
