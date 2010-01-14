@@ -3,7 +3,6 @@ inherit R kde4
 DESCRIPTION="KDE R GUI"
 HOMEPAGE="http://rkward.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
-PATCH_URI="0.5.1-as-needed.patch"
 
 # R.css provided by R
 # r.xml provided by kdelibs (libktexteditor)
