@@ -6,8 +6,8 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 # R.css provided by R
 # r.xml provided by kdelibs (libktexteditor)
-rkward_CONTENTS="--exclude=R.css --exclude=r.xml etc/ usr/"
-PKG_IGNORE="${R_SITELIB#/}/R.css usr/share/kde4/apps/katepart/syntax/r.xml"
+rkward_CONTENTS="--exclude=r.xml etc/ usr/"
+PKG_IGNORE="usr/share/kde4/apps/katepart/syntax/r.xml"
 
 CYGCMAKE_ARGS="
 	-DR_EXECUTABLE=${R}
