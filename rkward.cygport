@@ -1,7 +1,7 @@
 inherit R kde4
 
 NAME="rkward"
-VERSION=0.6.1
+VERSION=0.6.3
 RELEASE=1
 CATEGORY="Math"
 SUMMARY="KDE GUI for R statistical analysis language"
@@ -11,8 +11,8 @@ with a strong focus on statistic functions. It will not only provide a
 convenient user-interface, however, but also take care of seamless integration
 with an office-suite. Practical statistics is not just about calculating, after
 all, but also about documenting and ultimately publishing the results."
-HOMEPAGE="http://rkward.sourceforge.net/"
-SRC_URI="mirror://sourceforge/rkward/rkward-${VERSION}.tar.gz"
+HOMEPAGE="http://rkward.kde.org/"
+SRC_URI="mirror://kde/stable/rkward/${VERSION}/src/rkward-${VERSION}.tar.gz"
 
 REQUIRES="kate4-part"
 
@@ -28,4 +28,5 @@ CYGCMAKE_ARGS="
 	-DR_HOME=${R_HOME}
 	-DR_INCLUDEDIR=${R_INCLUDEDIR}
 	-DR_LIBDIR=${R_SITELIB}
+	-DGETTEXT_LIBRARIES=-lintl
 "
