@@ -14,6 +14,8 @@ all, but also about documenting and ultimately publishing the results."
 HOMEPAGE="http://rkward.sourceforge.net/"
 SRC_URI="mirror://sourceforge/rkward/rkward-${VERSION}.tar.gz"
 
+REQUIRES="kate4-part"
+
 # R.css provided by R
 # r.xml provided by kdelibs (libktexteditor)
 rkward_CONTENTS="--exclude=r.xml etc/ usr/"
